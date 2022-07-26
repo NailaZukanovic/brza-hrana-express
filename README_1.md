@@ -31,13 +31,18 @@ npm install --save cors
 
 
 
-##
+## UPUTSTVA ZA DOCKER
 
-###
-// hashovati password sa 
+Pokrenuti Docker Desktop
+
+Zatim
+
+docker build -t drugidocker .
+
+docker run -p 3001:3001 drugidocker
 
 
-const isPasswordCorrect = (password, hashedPassword) => {
-  // let _hashedPassword2 = crypto.createHash('sha256')
-};
+Moze se na priemr startovati i na portu 3005 sa komandom
+
+docker run -p 3005:3001 drugidocker
 

@@ -18,4 +18,5 @@ COPY . .
 # EXPOSE 8080
 EXPOSE 3001
 # CMD [ "node", "server.js" ]
-CMD [ "node", "start" ]
+# CMD [ "node", "start" ]
+CMD [ "node", "bin/www" ]
