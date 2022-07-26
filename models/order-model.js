@@ -5,6 +5,10 @@ const mongoose = require('mongoose');
 */
 
 const orderSchema = new mongoose.Schema({
+  restoran: {
+    type: String,
+    required: [true, 'Order must belog to a restoran'],
+  },
   ime_i_prezime: {
     type: String,
     required: [true],

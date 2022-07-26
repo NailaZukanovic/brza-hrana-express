@@ -68,7 +68,8 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 
 // PARSERS
-app.use(express.json()); // It parses incoming requests with JSON payloads and is based on body-parser.
+// app.use(express.json()); // It parses incoming requests with JSON payloads and is based on body-parser.
+app.use(express.json({limit: '50mb'})); // It parses incoming requests with JSON payloads and is based on body-parser.
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // You should use the parser middleware before the route declaration part

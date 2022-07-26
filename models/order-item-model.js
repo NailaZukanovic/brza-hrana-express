@@ -22,7 +22,11 @@ const orderItemSchema = new mongoose.Schema({
     type: String,
     required: [true],
   },
-  opcije_odabrane: [String]
+  kolicina: {
+    type: Number,
+    required: [true],
+  },
+  odabrane_opcije: [String]
 }, { collection: 'order_item' });
 
 const Tour = mongoose.model('order_item', orderItemSchema);
